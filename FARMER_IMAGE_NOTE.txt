@@ -1,0 +1,1 @@
+The farmer reference image is available in the conversation. The current repository keeps the existing farmer.webp asset because the GitHub contents connector cannot replace an existing binary file directly; use a Git data blob/tree update for the binary asset if needed.
