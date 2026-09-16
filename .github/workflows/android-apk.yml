@@ -27,6 +27,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - name: Setup Java 21
         uses: actions/setup-java@v5
@@ -54,6 +55,9 @@ jobs:
 
       - name: Install web dependencies
         run: npm install
+
+      - name: Install TypeScript for Capacitor config
+        run: npm install --no-save --save-dev typescript
 
       - name: Build web app for Render backend
         run: npm run build
