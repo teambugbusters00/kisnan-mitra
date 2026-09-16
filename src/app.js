@@ -1,6 +1,6 @@
 import './styles.css';
 const API_BASE=import.meta.env.VITE_API_BASE_URL||'https://kisanlink-api-ksfw.onrender.com';
-const TOKEN='kisanlink_token',USER='kisanlink_user',logo='/assets/kisanlink-logo.png';
+const TOKEN='kisanlink_token',USER='kisanlink_user',logo='/assets/kisanlink-logo.svg';
 const state={route:location.hash.slice(1)||'/login',user:null};
 const token=()=>localStorage.getItem(TOKEN),auth=()=>!!token();
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
